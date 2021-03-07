@@ -1,38 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
 .App {
-  text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+    font-family: 'Monoton', cursive;
+    font-size: 72px;
+    color: #036a77;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+}
+  
+.searchTerm {
+    width: 100%;
+    border: 3px solid #036a77;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+  
+.searchTerm:focus{
+    color: #00B4CC;
+}
+  
+.searchButton {
+    width: 56px;
+    height: 52px;
+    border: 1px solid #036a77;
+    background: #036a77;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.checklist {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.target {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.target label {
+    padding-left: 10px;
+    color: #d3d3d3;
 }
