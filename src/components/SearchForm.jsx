@@ -88,7 +88,7 @@ export default function SearchForm () {
         })
 
         console.log(request)
-        axios.post('http://localhost:8080/bifrost/search', request).then(response => {
+        axios.post('https://3vjnu1bd05.execute-api.us-east-1.amazonaws.com/bifrost/search', request).then(response => {
             window.open(response.data, '_self');
         })
         .catch(error => {console.log(error)});
